@@ -25,6 +25,23 @@ module.exports = {
         'no-dupe-keys': 'error',
         'object-curly-spacing': ['warn', 'always'],
 
+        'max-len': [
+            'error',
+            {
+                'code': 120,
+                'tabWidth': 4,
+            },
+        ],
+
+        'max-lines': [
+            'error',
+            {
+                'max': 300,
+                'skipBlankLines': true,
+                'skipComments': true,
+            },
+        ],
+
         indent: ['error', 4],
         quotes: ['warn', 'single', { avoidEscape: true }],
     }
